@@ -8,7 +8,10 @@ let car = {
   items: ["groceries", "spare wheel", "jack", "blanket"],
   driver: {name:"luk", driversLicense: ["A","B","C"]},
   driver01: {name:"luk", driversLicense: ["A","B","C"]},
-  driver02: {name:"lena", driversLicense: ["A","B","C"]}
+  driver02: {name:"lena", driversLicense: ["A","B","C"]},
+  addItem: function(item) {
+    this.items.push(item);
+  }
 }
 
 //get data with dot -   objektNamn.värde
@@ -69,3 +72,6 @@ for (let i = 0; i <= car.driversCount; i++) {
     }
   }
 }
+
+//using function to add item to items
+car.addItem("voleyball");
